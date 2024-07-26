@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - Música y Podcasts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" id="menuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="sideNav" class="side-nav">
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="podcast.html">Podcasts</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto" class="contact">
+            <h2>Contáctenos</h2>
+            <p>Contáctanos en <a href="mailto: Edi@musicaypodcasts.com">Edi@musicaypodcasts.com</a></p>
+            <p>Síguenos en nuestras redes sociales</p>
+            <div class="social-media">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="img/fb.jpeg" alt="Facebook"></a>
+                <a href="https://x.com/?lang=en&mx=2"><img src="img/x.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/"><img src="img/insta.jpeg" alt="Instagram"></a>
+            </div>
+            <h3>Formulario de Contacto</h3>
+            <form action="send_form.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <h3>Nuestra Ubicación</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.022866144217!2d-122.4064171846816!3d37.785834979756045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808aa2a1e3c5%3A0x3b0b6e36c0d33d7d!2sFacebook%20HQ!5e0!3m2!1sen!2sus!4v1591098612207!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Música y Podcasts. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
